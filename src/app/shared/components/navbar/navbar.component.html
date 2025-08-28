@@ -1,0 +1,35 @@
+<mat-toolbar class="bg-white shadow-md fixed top-0 w-full z-50 px-4 py-2 flex justify-between items-center">
+
+  🔙 לוגו/כותרת
+  <!-- <div class="flex items-center gap-2"> -->
+    <!-- <div -->
+      <!-- class="w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center text-sm font-semibold cursor-pointer" -->
+      <!-- [routerLink]="`users/edit/${currentUser?.id}`" [matTooltip]="currentUser?.fullName"> -->
+      <!-- {{ currentUser?.fullName?.charAt(0) || '?' }} -->
+    <!-- </div> <span id="go_home" routerLink="/home"
+      class="font-bold text-lg text-gray-800 hover:text-blue-600 transition cursor-pointer">
+      {{currentCompany || 'navbar.title' | transloco }}
+    </span>
+  </div> -->
+
+  <!-- ⚙️ פעולות -->
+  <div class="flex items-center gap-3">
+
+    <!-- 🔄 החלפת שפה -->
+    <app-language-switcher></app-language-switcher>
+
+    <!-- 🔐 התחברות / התנתקות -->
+    <button mat-icon-button *ngIf="!isLoggedIn()" [routerLink]="['/login']" aria-label="Login"
+      matTooltip="{{ 'navbar.login' | transloco }}">
+      <mat-icon>login</mat-icon>
+    </button>
+
+    <button mat-icon-button *ngIf="isLoggedIn()" (click)="logout()" aria-label="Logout"
+      matTooltip="{{ 'navbar.logout' | transloco }}">
+      <mat-icon>logout</mat-icon>
+    </button>
+  </div>
+</mat-toolbar>
+
+<!-- Spacer for fixed toolbar -->
+<div class="h-16"></div>

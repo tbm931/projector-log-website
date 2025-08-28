@@ -1,0 +1,689 @@
+{
+  "login": {
+    "title": "Login",
+    "username": "Username",
+    "password": "Password",
+    "button": "Login",
+    "createAccount": "Create Account",
+    "noAccount": "Don't have an account?",
+    "errors": {
+      "required_username": "Username is required",
+      "required_password": "Password is required",
+      "min_password": "Minimum 6 characters"
+    }
+  },
+  "navbar": {
+    "title": "Projector Log",
+    "selectLanguage": "Select Language",
+    "language": {
+      "he": "Hebrew",
+      "en": "English"
+    }
+  },
+  "projectCreate": {
+    "title": "Create Project",
+    "name": "Project Name",
+    "status": "Status",
+    "namePlaceholder": "e.g. Building A",
+    "description": "Description",
+    "descriptionPlaceholder": "Short description...",
+    "reportTemplate": "Report Template",
+    "save": "Save",
+    "addUsersTitle": "Reports to Project",
+    "reportersSelect": "Select reporters",
+    "addUsersButton": "Save Reporters",
+    "addApproversTitle": "Define Approvers",
+    "approversSelect": "Select Approvers",
+    "finishButton": "Finish and Save",
+    "projectDetails": "Project details"
+  },
+  "projects": {
+    "listTitle": "Project List",
+    "viewDetails": "View Details",
+    "create": "New Project",
+    "loading": "Loading projects...",
+    "error": "Error loading projects",
+    "empty": "No projects to display",
+    "projectDelete": {
+      "success": "The project was deleted successfully",
+      "error": "An error occurred while deleting the project",
+      "hasTasks": "Cannot delete a project that has existing tasks",
+      "notFound": "The project was not found"
+    },
+    "table": {
+      "name": "Name",
+      "status": "Status",
+      "tasks": "Tasks",
+      "reports": "Reports",
+      "tasksTooltip": "Tasks for project",
+      "reportsTooltip": "Reports for project"
+    },
+    "tasks": " Tasks",
+    "reports": "Reports",
+    "documents": "Documents"
+  },
+  "deleteDialog": {
+    "confirmTitle": "Delete",
+    "confirmMessage": "Are you sure you want to delete? This action cannot be undone."
+  },
+  "projectEdit": {
+    "title": "Project Edit"
+  },
+  "sidebar": {
+    "home": "Home",
+    "projects": "Projects",
+    "users": "Users",
+    "templates": "Templates"
+  },
+  "home": {
+    "howCanWeHelp": "How can we help?",
+    "manageProjects": "Manage Projects",
+    "createProject": "Create Project",
+    "createReport": "Create Report",
+    "reportsList": "Reports List",
+    "manageUsers": "Users List",
+    "templates": "Templates",
+    "title": "Total Control Over Your Workflow",
+    "subtitle": "Plan smarter, manage better, deliver faster – with one powerful system",
+    "reportTemplates": "Templates",
+    "taskStatuses": "Task Statuses",
+    "tasksTypes": "Task Types",
+    "requiredDocumentTypes": "Required Documents Types",
+    "projects": "Projects",
+    "tasks": "Tasks",
+    "reports": "Reports",
+    "dashboard": "dashboard",
+    "users": "Users",
+    "roles": "Permissions",
+    "hierarchy": "Hierarchy Management",
+    "quillEditor": "Text Editor",
+    "systemPagesHub": "System Tables",
+    "documents": "Documents"
+  },
+  "submenu": {
+    "projects": {
+      "title": "Projects",
+      "createProject": "Create Project",
+      "projectList": "Project List"
+    },
+    "templates": {
+      "title": "Templates",
+      "createTemplate": "Create Template",
+      "templateList": "Template List",
+      "templateView": "Template View"
+    }
+  },
+  "viewTemplate": {
+    "title": "View Template"
+  },
+  "template-edit": {
+    "title": "✏ Edit Report Template",
+    "back": "Back to list",
+    "status": {
+      "loading": "🔄 Loading...",
+      "error": "❌ Error loading or saving",
+      "saved": "✅ Saved successfully!",
+      "duplicated": "✅ Template duplicated! Redirecting to new copy.",
+      "deleted": "🗑 Template deleted! Returning to list..."
+    },
+    "form": {
+      "details-title": "🧾 Template Details",
+      "name": "Name *",
+      "description": "Description",
+      "active": "Active",
+      "category-name": "Category Name *",
+      "field": {
+        "name": "Field Name",
+        "key": "Internal Key",
+        "type": {
+          "text": "Text",
+          "number": "Number",
+          "date": "Date",
+          "select": "Select"
+        },
+        "required": "Required"
+      },
+      "buttons": {
+        "add-category": "➕ Add Category",
+        "add-field": "➕ Add Field",
+        "remove-category": "❌ Remove Category",
+        "save": "💾 Save",
+        "duplicate": "🧬 Duplicate Template",
+        "delete": "🗑 Delete Template"
+      }
+    }
+  },
+  "template-list": {
+    "title": "Template Management",
+    "loading": "⏳ Loading templates...",
+    "error": "❌ Error loading",
+    "empty": "No templates available to display.",
+    "active": "Active",
+    "inactive": "Inactive",
+    "newTemplate": "New Template"
+  },
+  "edit_template": {
+    "title": "Edit Report Template",
+    "details": "Template Details"
+  },
+  "status": {
+    "loading": "🔄 Loading...",
+    "saved": "✅ Saved successfully!",
+    "duplicate_success": "✅ Template duplicated! Redirected to the copy.",
+    "delete_success": "🗑 Template deleted! Returning to list...",
+    "error": "❌ Error during load or save"
+  },
+  "buttons": {
+    "back": "Back to list",
+    "save": "💾 Save",
+    "duplicate": "🧬 Duplicate Template",
+    "delete": "🗑 Delete Template",
+    "add_category": "➕ Add Category",
+    "add_field": "➕ Add Field",
+    "remove_category": "❌ Remove Category",
+    "remove_field": "❌ Remove Field",
+    "quick_update": {
+      "button": "Update",
+      "updated": "Updated"
+    }
+  },
+  "form": {
+    "name": "Name *",
+    "description": "Description",
+    "active": "Active",
+    "category_name": "Category Name *",
+    "field_name": "Field Name",
+    "field_key": "Internal Key",
+    "required": "Required",
+    "field_type": {
+      "text": "Text",
+      "number": "Number",
+      "date": "Date",
+      "select": "Select"
+    }
+  },
+  "edit": {
+    "field_allow_comments_label": "Allow comments",
+    "title": "Edit Template: {{name}}",
+    "loading": "Loading...",
+    "saved": "Changes saved successfully.",
+    "duplicate_success": "Template duplicated successfully.",
+    "delete_success": "Template deleted successfully.",
+    "error": "An error occurred, please try again.",
+    "back": "Back",
+    "section_template": "Template Details",
+    "name_label": "Template Name",
+    "description_label": "Description",
+    "active_label": "Active",
+    "unnamed": "Unnamed",
+    "category_name_label": "Category Name",
+    "field_name_placeholder": "Field Name",
+    "field_key_placeholder": "Field Key",
+    "field_type_text": "Text",
+    "field_type_number": "Number",
+    "field_type_date": "Date",
+    "field_type_select": "Select",
+    "field_required_label": "Required",
+    "add_field": "Add Field",
+    "remove_category": "Remove Category",
+    "add_category": "Add Category",
+    "save_changes": "Save",
+    "duplicate_template": "Duplicate Template",
+    "delete_template": "Delete Template",
+    "template_list": "Template List"
+  },
+  "createTemplate": {
+    "title": "✨ Create New Report Template",
+    "success": "✅ Template saved successfully!",
+    "error": "❌ Failed to save the template. Please try again.",
+    "loading": "🔄 Saving...",
+    "templateDetails": "Template Details",
+    "nameLabel": "Template Name",
+    "descriptionLabel": "Description",
+    "activeLabel": "Active",
+    "unnamedField": "Unnamed",
+    "category": "Category",
+    "removeCategory": "Remove Category",
+    "categoryNameLabel": "Category Name",
+    "field": "Field",
+    "removeField": "Remove Field",
+    "fieldNamePlaceholder": "Field Name",
+    "fieldKeyPlaceholder": "Internal Key",
+    "fieldTypeText": "Text",
+    "fieldTypeNumber": "Number",
+    "fieldTypeDate": "Date",
+    "fieldTypeSelect": "Select",
+    "fieldTypeTime": "Time",
+    "fieldTypeTextarea": "Long Text",
+    "fieldTypeSignature": "Signature",
+    "requiredLabel": "Required",
+    "addField": "Add Field",
+    "addCategory": "Add Category",
+    "saveTemplate": "Save Template",
+    "option": "Option",
+    "valueKeyPlaceholder": "Internal key",
+    "translationHe": "Hebrew",
+    "translationEn": "English",
+    "translationPlaceholderHe": "e.g. Yes (in Hebrew)",
+    "translationPlaceholderEn": "e.g. Yes",
+    "addOption": "Add Option",
+    "removeOption": "Remove option",
+    "contactTypeLabel": "Select contact type",
+    "type": {
+      "text": "Text",
+      "number": "Number",
+      "date": "Date",
+      "time": "Time",
+      "datetime": "Date and Time",
+      "select": "Select",
+      "textarea": "Long Text",
+      "signature": "Signature",
+      "image": "Images",
+      "file": "Files",
+      "video": "Videoes",
+      "quickUpdate": "Quick update button",
+      "gpsLocation": "GPS Location",
+      "contact": "Contact user",
+      "documentRequirements": "Required Documents"
+    },
+    "documentRequirements": {
+      "title": "Required document types"
+    }
+  },
+  "report": {
+    "title": "Daily Report",
+    "date": "Report Date",
+    "project": "Project",
+    "selectProject": "Select a project...",
+    "step": "Step {{current}} of {{total}}",
+    "prev": "Previous",
+    "next": "Next",
+    "submit": "Submit",
+    "success": "Report submitted successfully!",
+    "loading": "Submitting...",
+    "comment_placeholder": "Description/Comment for the field (optional)"
+  },
+  "reportList": {
+    "title": "Report List",
+    "create": "New report"
+  },
+  "reportView": {
+    "backToList": "Back to list",
+    "reportedBy": "Reported by",
+    "project": "Project",
+    "template": "Template",
+    "reportDate": "Report date",
+    "loading": "Loading...",
+    "signatureAlt": "Signature",
+    "imageAlt": "Image",
+    "approvers": "Approvers",
+    "approvalDate": "Approval Date",
+    "approveNow": "Approve"
+  },
+  "approvalDialog": {
+    "selectStatus": "Select status",
+    "note": "Note",
+    "submit": "Approve",
+    "success": "Approval saved successfully",
+    "error": "An error occurred while saving",
+    "cancel": "Cancel",
+    "approveNow": "Approve now",
+    "signature": "Signature",
+    "approvalDate": "Approval Date",
+    "tab_approve": "Approve",
+    "tab_discussion": "Processes",
+    "subject": "Subject",
+    "message": "Message",
+    "openDiscussion": "Create",
+    "newDiscussion": "New Discussion",
+    "discussionOpened": "The process was opened successfully",
+    "discussionTarget": "Send To",
+    "fillAllFields": "Please fill in all fields",
+    "processType": "Process Type"
+  },
+  "messageDialog": {
+    "title": "Message",
+    "confirm": "Ok",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "userCreate": {
+    "title": "Add New User",
+    "username": "Username",
+    "password": "Password",
+    "fullName": "Full Name",
+    "email": "Email",
+    "phone": "Phone",
+    "role": "Role",
+    "permissionGroup": "Permission group",
+    "save": "Save User",
+    "saving": "Saving...",
+    "sendConnectionDetails": "Send connection details to the user",
+    "errors": {
+      "username": "Username is required",
+      "password": "Password is required",
+      "fullName": "Full name is required",
+      "roleId": "Role is required"
+    }
+  },
+  "userList": {
+    "title": "User List",
+    "loading": "Loading users...",
+    "error": "An error occurred while loading users",
+    "empty": "No users found",
+    "username": "Username",
+    "role": "Role",
+    "edit": "Edit user",
+    "create": "Add User",
+    "noPermissionGroup": "No group"
+  },
+  "userEdit": {
+    "title": "Edit User"
+  },
+  "userView": {
+    "title": "User Details"
+  },
+  "userDelete": {
+    "confirmTitle": "Delete User",
+    "confirmMessage": "Are you sure you want to delete this user? This action cannot be undone.",
+    "success": "User deleted successfully",
+    "error": "An error occurred while deleting the user"
+  },
+  "task": {
+    "delete": "Delete Task",
+    "details": "Task Details",
+    "confirmDelete": "Are you sure you want to delete this task?",
+    "deleted": "Task deleted successfully",
+    "type": "Task Type",
+    "createTitle": "Create New Task",
+    "editTitle": "Edit Task",
+    "title": "Title",
+    "description": "Description",
+    "status": "Status",
+    "priority": "Priority",
+    "assignedUser": "Assigned User",
+    "project": "Project",
+    "files": "Files",
+    "tags": "Tags",
+    "tagsPlaceholder": "Type tag name",
+    "create": "New Task",
+    "update": "Update Task",
+    "errors": {
+      "required": "This field is required",
+      "priorityRange": "Priority must be between 1 and 5"
+    },
+    "listTitle": "Tasks",
+    "loading": "Loading tasks...",
+    "loadError": "Failed to load tasks.",
+    "empty": "No tasks found.",
+    "statusUnknown": "Unknown",
+    "noDescription": "No description",
+    "filter": {
+      "status": "Status",
+      "project": "Project",
+      "assignedUser": "Assigned User",
+      "waitingForMe": "Waiting for me",
+      "resultsCount": "Count task",
+      "dateRange": "date range",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "showFilters": "Show Filters",
+      "hideFilters": "Hide Filters",
+      "tag": "Filter by tag",
+      "editFilters": "Edit Filters",
+      "taskTitle": "Task title",
+      "sortBy": "Sort by",
+      "sortOptions": {
+        "priority": "Priority",
+        "lastUpdatedDate": "Last Updated Date",
+        "ai": "Automatic with AI"
+      }
+    },
+    "taskDelete": {
+      "success": "The task was successfully deleted.",
+      "error": "An error occurred while deleting the task.",
+      "notFound": "The task was not found.",
+      "referenced": "The task cannot be deleted because it is linked to other items."
+    },
+    "createdAt": "Created At",
+    "updatedAt": "Updated At",
+    "completedAt": "Completed At"
+  },
+  "taskStatus": {
+    "title": "Task Statuses",
+    "create": "New Status",
+    "default": "Default",
+    "final": "Final",
+    "save": "Save",
+    "delete": "Delete",
+    "add": "New Status",
+    "color": "Color",
+    "namePlaceholder": "Status name",
+    "iconPlaceholder": "Select an icon",
+    "nameLabel": "Status Name *",
+    "iconLabel": "Icon",
+    "loading": "Loading statuses...",
+    "empty": "No statuses found",
+    "successSave": "Status saved successfully",
+    "successDelete": "Status deleted successfully",
+    "errors": {
+      "errorTitle": "Error",
+      "errorDeleteInUseMessage": "Cannot delete a status that is in use",
+      "errorSaveMessage": "An error occurred while saving the status",
+      "errorDeleteMessage": "An error occurred while deleting the status",
+      "errorLoading": "An error occurred while loading statuses",
+      "saveFailed": "An error occurred while saving the status"
+    },
+    "cancelCreateTitle": "Cancel New Status",
+    "cancelCreateMessage": "The new status hasn't been saved. Do you want to discard it?",
+    "unsavedTitle": "Unsaved Changes",
+    "unsavedMessage": "You have unsaved changes. Are you sure you want to discard them?",
+    "absantFieldsTitle": "Missing Fields",
+    "absantFieldsMessage": "There are required fields that have not been filled. Please fill in all required fields."
+  },
+  "selectCompany": {
+    "title": "Select a system",
+    "choose": "Choose your company",
+    "submit": "Continue"
+  },
+  "auth": {
+    "invalid_credentials": "Invalid username or password",
+    "general_error": "An error occurred. Please try again later.",
+    "unknown_error": "Unknown error"
+  },
+  "templateType": {
+    "templateTypeTitle": "Template Type",
+    "task": "✅Task",
+    "worklog": "📝Work Log",
+    "asset": "📦Asset"
+  },
+  "taskTypeForm": {
+    "title": "Task Type Setup",
+    "name": "Task Type Name",
+    "template": "Associated Template",
+    "createSuccess": "Task type created successfully!",
+    "updateSuccess": "Task type updated successfully!",
+    "confirmDelete": "Are you sure you want to delete this task type?",
+    "deleteSuccess": "Task type deleted successfully",
+    "deleteError": "Error occurred while deleting"
+  },
+  "taskTypeList": {
+    "title": "Task Types",
+    "template": "Associated Template",
+    "empty": "No task types found"
+  },
+  "common": {
+    "save": "Save",
+    "add": "Add",
+    "update": "Update",
+    "updated": "updated",
+    "create": "Create",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "approve": "Approve",
+    "assign": "Assign",
+    "submit": "Submit",
+    "back": "Back",
+    "close": "Close",
+    "all": "All",
+    "none": "None",
+    "without": "Without",
+    "clearFilters": "clear filters",
+    "saved_successfully": "Saved successfully",
+    "deleted_successfully": "Deleted successfully",
+    "updated_successfully": "Updated successfully",
+    "saved_error": "Error saving",
+    "updated_error": "Error updating",
+    "deleted_error": "Error deleting",
+    "loading": "Loading...",
+    "select": "Select",
+    "copyLink": "Copy link to clipboard",
+    "linkCopied": "Link copied to clipboard",
+    "selectAll": "Select All",
+    "select_placeholder": "Select",
+    "open_in_new_tab": "Open in new tab",
+    "active": "Active",
+    "inactive": "Inactive",
+    "yes": "Yes",
+    "no": "No",
+    "retry": "Try again",
+    "inUse": "Cannot delete this value because it is in use"
+  },
+  "permission": {
+    "selectEntities": "Select Entities",
+    "actions": "Actions",
+    "manageTitle": "Role Management",
+    "create": "Add group",
+    "loadingGroups": "Loading groups...",
+    "noGroupsFound": "No permission groups found.",
+    "errorLoadingGroups": "Error loading permission groups",
+    "noDescription": "No description"
+  },
+  "taskType": {
+    "create": "Add Task Type"
+  },
+  "roles": {
+    "manageTitle": "Role Management",
+    "create": "New Role"
+  },
+  "priority": {
+    "low": "Low",
+    "medium": "Medium",
+    "high": "High",
+    "critical": "Critical"
+  },
+  "access": {
+    "validating": "Validating link, please wait..."
+  },
+  "unauthorized": {
+    "title": "You are not authorized to access this page",
+    "subtitle": "The link may be invalid or you are not allowed to view this page.",
+    "backToHome": "Return to homepage"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "subtitle": "The link might be incorrect or the resource was removed.",
+    "backToHome": "Back to homepage"
+  },
+  "hierarchy": {
+    "listTitle": "Hierarchy Levels",
+    "create": "Add New Level",
+    "empty": "No hierarchy levels found.",
+    "loading": "Loading...",
+    "level": "Level",
+    "notUpperLevel": "Not Upper Level",
+    "active": "Active",
+    "inactive": "Inactive",
+    "editTitle": "Edit Hierarchy Level",
+    "createTitle": "Add Hierarchy Level",
+    "displayName": "Level Name",
+    "levelIndex": "Hierarchy Position",
+    "isActive": "Active",
+    "details": "Hierarchy Details",
+    "newValue": "Add New Value",
+    "noParent": "No parent level",
+    "hierarchySettings": "Hierarchy Settings",
+    "values": {
+      "title": "Values"
+    },
+    "entities": {
+      "title": "Entities Usage"
+    },
+    "error": {
+      "create": "Error creating new level",
+      "update": "Error updating level",
+      "delete": "Error deleting level",
+      "fetch": "Error fetching hierarchy levels"
+    }
+  },
+  "companySettings": {
+    "title": "Company Settings",
+    "companyName": "Company Name",
+    "companyPhone": "Phone",
+    "companyEmail": "Email",
+    "companyIdentifier": "Company Identifier",
+    "companyAddress": "Address",
+    "smsProvider": "SMS Provider",
+    "smsSenderName": "Sender Name",
+    "smsSenderPhone": "Sender Phone",
+    "smsUserName": "SMS Username",
+    "smsPassword": "SMS Password",
+    "changePasswordLabel": "Change SMS Password",
+    "loading": "Loading company settings...",
+    "noSettingsFound": "No settings found – create now.",
+    "successMessage": "Settings saved successfully",
+    "error": "Failed to load company settings.",
+    "createButton": "Create Settings",
+    "general": "general",
+    "sms": "SMS",
+    "companyNameRequired": "Company name is required"
+  },
+  "validation": {
+    "required": "This field is required",
+    "email": "Invalid email address",
+    "atLeastOne": "Select at least one document type"
+  },
+  "pwa": {
+    "newVersionTitle": "Update Available!",
+    "newVersionText": "A new version of the system is available. Would you like to update now?",
+    "reloadNow": "Yes, update now",
+    "cancel": "Later"
+  },
+  "systemPagesHub": {
+    "title": "Manage system tables"
+  },
+  "comingSoon": {
+    "title": "This module is under development",
+    "description": "We are currently working on this feature to provide you with the best experience. Stay tuned!"
+  },
+  "requiredDocTypeForm": {
+    "createTitle": "Add Required Document Type",
+    "editTitle": "Edit Required Document Type",
+    "viewTitle": "View Required Document Type",
+    "key": "Unique Key",
+    "displayName": "Display Name",
+    "description": "Description",
+    "defaultIsRequired": "Required by Default",
+    "minFiles": "Minimum Files",
+    "maxFiles": "Maximum Files",
+    "allowedMime": "Allowed File Types",
+    "isActive": "Active",
+    "createSuccess": "Document type created successfully",
+    "updateSuccess": "Document type updated successfully",
+    "deleteSuccess": "Document type deleted successfully",
+    "error": "An error occurred while saving the document type",
+    "loadError": "Failed to load document type",
+    "deleteError": "Failed to delete document type",
+    "confirmDelete": "Are you sure you want to delete this document type?",
+    "requiredMinError": "If required, minimum files must be at least 1",
+    "minMaxError": "Maximum files must be greater than or equal to minimum files"
+  },
+  "requiredDocTypeList": {
+    "title": "Required Document Types",
+    "create": "Add Document Type",
+    "empty": "No document types to display",
+    "required": "Required",
+    "mime": "Allowed File Types"
+  }
+}

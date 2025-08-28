@@ -1,0 +1,8 @@
+<div class="editor-wrapper" dir="auto">
+  <quill-editor dir="auto"
+    [modules]="modules"
+    [(ngModel)]="content"
+    (onContentChanged)="handleContentChange($event)"
+    [styles]="{height: '100%'}"
+  ></quill-editor>
+</div>

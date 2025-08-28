@@ -1,0 +1,96 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Rubik', Arial, sans-serif;
+  margin: 0;
+}
+
+mat-sidenav-container {
+  height: 100vh;
+  display: flex;
+}
+
+app-report-template-create {
+  background: #cacaca;
+  height: 100vh;
+}
+
+app-work-log-wizard>div {
+  border: 1px solid #e3e3e3;
+}
+
+body,
+button,
+input,
+select,
+textarea,
+label,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+div,
+th,
+td,
+.mat-button,
+.mat-raised-button,
+.mat-flat-button,
+.mat-form-field,
+.mat-card {
+  font-family: 'Rubik', Arial, sans-serif !important;
+}
+
+.mat-chip, .mat-standard-chip {
+  background-color: #ffeaea !important;
+  color: #333 !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+.mat-chip:hover,
+.mat-chip:focus,
+.mat-chip:active,
+.mat-standard-chip:hover,
+.mat-standard-chip:focus,
+.mat-standard-chip:active {
+  background-color: #ffcdd2 !important;
+  color: #b71c1c !important;
+}
+
+.mat-chip .mat-icon[matChipRemove],
+.mat-standard-chip .mat-icon[matChipRemove] {
+  color: #888 !important;
+  transition: color 0.2s;
+  cursor: pointer;
+}
+
+.mat-chip:hover .mat-icon[matChipRemove],
+.mat-chip .mat-icon[matChipRemove]:hover,
+.mat-standard-chip:hover .mat-icon[matChipRemove],
+.mat-standard-chip .mat-icon[matChipRemove]:hover {
+  color: #d32f2f !important;
+}
+
+.rtl-snackbar {
+  direction: rtl;
+  text-align: right;
+}
+
+.ltr-snackbar {
+  direction: ltr;
+  text-align: left;
+
+}

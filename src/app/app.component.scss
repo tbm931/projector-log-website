@@ -1,0 +1,31 @@
+html {
+  direction: inherit;
+  scroll-behavior: smooth;
+}
+
+.snackbar-success {
+  background-color: #4caf50; // ירוק
+  color: #fff;
+}
+
+.snackbar-error {
+  background-color: #f44336; // אדום
+  color: #fff;
+}
+
+.snackbar-warning {
+  background-color: #ff9800; // כתום
+  color: #fff;
+}
+
+.snackbar-info {
+  background-color: #2196f3; // כחול
+  color: #fff;
+}
+
+.mat-mdc-snack-bar-container {
+  font-family: 'Assistant', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 8px;
+}

@@ -1,0 +1,14 @@
+<div *ngIf="loading" class="text-center text-blue-600 text-sm flex items-center justify-center gap-1">
+  <mat-icon color="primary" class="animate-spin">autorenew</mat-icon>
+  {{ loadingText | transloco }}
+</div>
+
+<div *ngIf="error" class="text-center text-red-600 text-sm flex items-center justify-center gap-1">
+  <mat-icon color="warn">error</mat-icon>
+  {{ errorText | transloco }}
+</div>
+
+<div *ngIf="!loading && !error && empty" class="text-center text-gray-400 text-sm flex items-center justify-center gap-1">
+  <mat-icon class="text-gray-400">info</mat-icon>
+  {{ emptyText | transloco }}
+</div>

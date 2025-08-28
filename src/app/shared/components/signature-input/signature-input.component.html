@@ -1,0 +1,15 @@
+<div class="border rounded-xl shadow-sm bg-white p-4">
+    <canvas #canvas class="border border-gray-300 w-full h-48 rounded" [class.cursor-not-allowed]="disabled"
+        [class.cursor-crosshair]="!disabled"></canvas>
+
+    <div class="mt-2 flex justify-between items-center">
+        <button type="button" class="text-blue-600 text-sm" [disabled]="disabled" [class.opacity-50]="disabled"
+            (click)="clear()">
+            🧹 נקה חתימה
+        </button>
+
+        <span *ngIf="hasSignature" class="text-xs text-green-600">
+            ✔ חתימה קיימת
+        </span>
+    </div>
+</div>

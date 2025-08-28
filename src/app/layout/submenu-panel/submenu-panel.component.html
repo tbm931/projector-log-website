@@ -1,0 +1,18 @@
+<div *ngIf="service.isOpen()" class="fixed top-0 h-full w-72 bg-blue-50 shadow-lg z-50 transition-all duration-300">
+  <div class="flex justify-between items-center p-4 border-b border-blue-100">
+    <h3 class="text-xl font-bold">{{ service.submenuTitle() | transloco }}</h3>
+    <button (click)="service.close()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+
+  <ul class="p-4 space-y-2">
+    <li *ngFor="let item of service.submenuItems()"
+      class="py-2 px-2 rounded hover:bg-blue-100 cursor-pointer text-right">
+      <a [routerLink]="item.route" (click)="service.close()">
+        {{ item.name | transloco }}
+      </a>
+
+    </li>
+  </ul>
+</div>

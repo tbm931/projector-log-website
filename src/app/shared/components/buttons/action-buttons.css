@@ -1,0 +1,34 @@
+.action-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 8px;
+    padding: 0.5rem 1rem;
+    transition: all 0.2s ease;
+    flex: 1;
+    min-width: 0;
+    width: 100%;
+    white-space: nowrap;
+}
+
+.action-save {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+}
+
+.action-duplicate {
+    background-color: white;
+    color: #1f2937;
+    border: 1px solid #e5e7eb;
+}
+
+.action-delete {
+    background-color: #fef2f2;
+    color: #b91c1c;
+    border: 1px solid #fca5a5;
+}

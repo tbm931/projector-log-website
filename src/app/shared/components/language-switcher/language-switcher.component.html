@@ -1,0 +1,16 @@
+<!-- 🔄 כפתור פתיחת תפריט שפות -->
+<button mat-icon-button [matMenuTriggerFor]="langMenu" [attr.aria-label]="'navbar.selectLanguage' | transloco"
+    [matTooltip]="'navbar.selectLanguage' | transloco">
+    <mat-icon class="text-blue-600">language</mat-icon>
+</button>
+
+
+<!-- 🌍 תפריט שפות -->
+<mat-menu class="!min-w-[150px]" #langMenu="matMenu" class="lang-menu">
+    <button mat-menu-item (click)="changeLang('he')">
+        🇮🇱 &nbsp; {{ 'navbar.language.he' | transloco }}
+    </button>
+    <button mat-menu-item (click)="changeLang('en')">
+        🇬🇧 &nbsp; {{ 'navbar.language.en' | transloco }}
+    </button>
+</mat-menu>

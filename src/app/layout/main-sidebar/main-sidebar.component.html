@@ -1,0 +1,21 @@
+<div class="h-full bg-white shadow-lg transition-all duration-300 w-64 p-4">
+  <h2 class="text-xl font-bold mb-4">ProjectorLog</h2>
+
+  <nav class="space-y-2">
+
+    <a (click)="openSubmenu('projects')" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-100 rounded">
+      <mat-icon>folder</mat-icon>
+      <span>{{ 'sidebar.projects' | transloco }}</span>
+    </a>
+
+    <!-- <a *ngIf="authService.isAdmin() || authService.isSupervisor()" (click)="openSubmenu('users')" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-100 rounded">
+      <mat-icon>people</mat-icon>
+      <span>{{ 'sidebar.users' | transloco }}</span>
+    </a> -->
+
+    <!-- <a *ngIf="authService.isAdmin()" (click)="openSubmenu('templates')" class="flex items-center gap-3 px-3 py-2 hover:bg-gray-100 rounded">
+      <mat-icon>settings</mat-icon>
+      <span>{{ 'sidebar.templates' | transloco }}</span>
+    </a> -->
+  </nav>
+</div>

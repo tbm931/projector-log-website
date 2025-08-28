@@ -1,0 +1,691 @@
+{
+  "login": {
+    "title": "התחברות",
+    "username": "שם משתמש",
+    "password": "סיסמה",
+    "button": "התחבר",
+    "createAccount": "צור חשבון",
+    "noAccount": "אין לך חשבון?",
+    "errors": {
+      "required_username": "חובה להזין שם משתמש",
+      "required_password": "חובה להזין סיסמה",
+      "min_password": "לפחות 6 תווים"
+    }
+  },
+  "navbar": {
+    "title": "Projector Log",
+    "selectLanguage": "בחר שפה",
+    "language": {
+      "he": "עברית",
+      "en": "אנגלית"
+    }
+  },
+  "projectCreate": {
+    "title": "יצירת פרויקט",
+    "name": "שם הפרויקט",
+    "status": "סטטוס",
+    "namePlaceholder": "לדוגמה: מבנה A",
+    "description": "תיאור",
+    "descriptionPlaceholder": "תיאור קצר לפרויקט...",
+    "reportTemplate": "תבנית",
+    "save": "שמור",
+    "addUsersTitle": "מדווחים לפרויקט",
+    "reportersSelect": "בחר מדווחים",
+    "addUsersButton": "שמור מדווחים",
+    "addApproversTitle": "גורמים מאשרים",
+    "approversSelect": "בחר גורמים מאשרים",
+    "finishButton": "סיום ושמירה",
+    "projectDetails": "פרטים כלליים"
+  },
+  "projects": {
+    "listTitle": "פרויקטים",
+    "viewDetails": "לפרטים",
+    "create": "פרויקט חדש",
+    "loading": "טוען פרויקטים...",
+    "error": "שגיאה בטעינה",
+    "empty": "אין פרויקטים להצגה",
+    "projectDelete": {
+      "success": "הפרויקט נמחק בהצלחה",
+      "error": "אירעה שגיאה בעת מחיקת הפרויקט",
+      "hasTasks": "לא ניתן למחוק פרויקט עם משימות קיימות",
+      "notFound": "הפרויקט לא נמצא"
+    },
+    "table": {
+      "name": "שם",
+      "status": "סטטוס",
+      "tasks": "משימות",
+      "reports": "דיווחים",
+      "tasksTooltip": "משימות לפרויקט",
+      "reportsTooltip": "דיווחים לפרויקט"
+    },
+    "tasks": "משימות",
+    "reports": "דיווחים",
+    "documents": "מסמכים"
+  },
+  "deleteDialog": {
+    "confirmTitle": "מחיקה",
+    "confirmMessage": "האם אתה בטוח שברצונך למחוק? פעולה זו אינה הפיכה."
+  },
+  "sidebar": {
+    "home": "דף הבית",
+    "projects": "פרויקטים",
+    "users": "משתמשים",
+    "templates": "תבניות דיווח"
+  },
+  "home": {
+    "howCanWeHelp": "איך נוכל לעזור?",
+    "manageProjects": "ניהול פרויקטים",
+    "createProject": "צור פרויקט חדש",
+    "createReport": "יצירת דיווח",
+    "manageUsers": "רשימת משתמשים",
+    "reportsList": "רשימת דוחות",
+    "settings": "הגדרות",
+    "templates": "תבניות דיווח",
+    "title": "שליטה מלאה. תכנון חכם. ביצוע מדויק.",
+    "subtitle": "מערכת אחת לניהול כל המשימות, הפרויקטים ויומני העבודה שלכם",
+    "reportTemplates": "תבניות",
+    "taskStatuses": "סטטוסי משימות",
+    "tasksTypes": "סוגי משימות",
+    "requiredDocumentTypes": "סוגי מסמכים נדרשים",
+    "projects": "פרויקטים",
+    "tasks": "משימות",
+    "reports": "יומני עבודה",
+    "dashboard": "תצוגות",
+    "users": "משתמשים",
+    "roles": "ניהול הרשאות",
+    "hierarchy": "ניהול היררכיות",
+    "quillEditor": "עורך טקסט",
+    "companySettings": "הגדרות חברה",
+    "systemPagesHub": "טבלאות מערכת",
+    "documents": "מסמכים"
+  },
+  "viewTemplate": {
+    "title": "צפייה בתבנית"
+  },
+  "submenu": {
+    "projects": {
+      "title": "פרויקטים",
+      "createProject": "יצירת פרויקט",
+      "projectList": "פרויקטים"
+    },
+    "templates": {
+      "title": "תבניות דיווח",
+      "createTemplate": "יצירת תבנית",
+      "templateList": "רשימת תבניות"
+    },
+    "template-edit": {
+      "title": "עריכת תבנית",
+      "back": "חזרה לרשימה",
+      "status": {
+        "loading": "🔄 טוען...",
+        "error": "❌ שגיאה בטעינה או שמירה",
+        "saved": "✅ נשמר בהצלחה!",
+        "duplicated": "✅ התבנית שוכפלה בהצלחה! הועברת לעותק החדש.",
+        "deleted": "🗑 התבנית נמחקה! תועברי חזרה לרשימה..."
+      },
+      "form": {
+        "details-title": "🧾 פרטי תבנית",
+        "name": "שם *",
+        "description": "תיאור",
+        "active": "פעילה",
+        "category-name": "שם קטגוריה *",
+        "field": {
+          "name": "שם שדה",
+          "key": "מזהה פנימי",
+          "type": {
+            "text": "טקסט",
+            "number": "מספר",
+            "date": "תאריך",
+            "select": "בחירה"
+          },
+          "required": "חובה"
+        },
+        "buttons": {
+          "add-category": "➕ הוסף קטגוריה",
+          "add-field": "➕ הוסף שדה",
+          "remove-category": "❌ הסר קטגוריה זו",
+          "save": "💾 שמור",
+          "duplicate": "🧬 שכפל תבנית",
+          "delete": "🗑 מחק תבנית"
+        }
+      }
+    }
+  },
+  "template-list": {
+    "title": "ניהול תבניות",
+    "loading": "⏳ טוען תבניות...",
+    "error": "❌ שגיאה בטעינה",
+    "empty": "אין תבניות זמינות להצגה.",
+    "active": "פעילה",
+    "inactive": "מושבתת",
+    "newTemplate": "תבנית חדשה"
+  },
+  "edit_template": {
+    "title": "עריכת תבנית",
+    "details": "פרטי תבנית"
+  },
+  "projectEdit": {
+    "title": "עריכת פרויקט"
+  },
+  "status": {
+    "loading": "🔄 טוען...",
+    "saved": "✅ נשמר בהצלחה!",
+    "duplicate_success": "✅ התבנית שוכפלה בהצלחה! הועברת לעותק החדש.",
+    "delete_success": "🗑 התבנית נמחקה! תועברי חזרה לרשימה...",
+    "error": "❌ שגיאה בטעינה או שמירה"
+  },
+  "buttons": {
+    "back": "חזרה לרשימה",
+    "save": "💾 שמור",
+    "duplicate": "🧬 שכפל תבנית",
+    "delete": "🗑 מחק תבנית",
+    "add_category": "➕ הוסף קטגוריה",
+    "add_field": "➕ הוסף שדה",
+    "remove_category": "❌ הסר קטגוריה זו",
+    "remove_field": "❌ הסר שדה",
+    "quick_update": {
+      "button": "עדכן",
+      "updated": "עודכן"
+    }
+  },
+  "form": {
+    "name": "שם *",
+    "description": "תיאור",
+    "active": "פעילה",
+    "category_name": "שם קטגוריה *",
+    "field_name": "שם שדה",
+    "field_key": "מזהה פנימי",
+    "required": "חובה",
+    "field_type": {
+      "text": "טקסט",
+      "number": "מספר",
+      "date": "תאריך",
+      "select": "בחירה"
+    }
+  },
+  "edit": {
+    "field_allow_comments_label": "אפשר הוספת הערה",
+    "title": "עריכת תבנית: {{name}}",
+    "loading": "טוען...",
+    "saved": "השינויים נשמרו בהצלחה.",
+    "duplicate_success": "התבנית שוכפלה בהצלחה.",
+    "delete_success": "התבנית נמחקה בהצלחה.",
+    "error": "אירעה שגיאה, נסה שוב.",
+    "back": "חזרה",
+    "section_template": "פרטי התבנית",
+    "name_label": "שם התבנית",
+    "description_label": "תיאור",
+    "active_label": "פעיל",
+    "unnamed": "ללא שם",
+    "category_name_label": "שם קטגוריה",
+    "field_name_placeholder": "שם שדה",
+    "field_key_placeholder": "מפתח שדה",
+    "field_type_text": "טקסט",
+    "field_type_number": "מספר",
+    "field_type_date": "תאריך",
+    "field_type_select": "בחירה",
+    "field_required_label": "חובה",
+    "add_field": "הוסף שדה",
+    "remove_category": "הסר קטגוריה",
+    "add_category": "הוסף קטגוריה",
+    "save_changes": "שמור",
+    "duplicate_template": "שכפל תבנית",
+    "delete_template": "מחק תבנית",
+    "template_list": "רשימת תבניות"
+  },
+  "createTemplate": {
+    "title": "יצירת תבנית",
+    "success": "✅ התבנית נשמרה בהצלחה!",
+    "error": "❌ שמירת התבנית נכשלה. נסי שוב.",
+    "loading": "🔄 שומר...",
+    "templateDetails": "פרטי תבנית",
+    "nameLabel": "שם התבנית",
+    "descriptionLabel": "תיאור",
+    "activeLabel": "פעילה",
+    "unnamedField": "ללא שם",
+    "category": "קטגוריה",
+    "removeCategory": "הסר קטגוריה",
+    "categoryNameLabel": "שם קטגוריה",
+    "field": "שדה",
+    "removeField": "הסר שדה",
+    "fieldNamePlaceholder": "שם שדה",
+    "fieldKeyPlaceholder": "מזהה פנימי",
+    "fieldTypeText": "טקסט",
+    "fieldTypeNumber": "מספר",
+    "fieldTypeDate": "תאריך",
+    "fieldTypeSelect": "בחירה",
+    "fieldTypeTime": "שעה",
+    "fieldTypeTextarea": "טקסט מורחב",
+    "fieldTypeSignature": "חתימה",
+    "requiredLabel": "חובה",
+    "addField": "הוסף שדה",
+    "addCategory": "הוסף קטגוריה",
+    "saveTemplate": "שמור תבנית",
+    "option": "אופציה",
+    "valueKeyPlaceholder": "מפתח פנימי (לשימוש פנימי בלבד)",
+    "translationHe": "עברית",
+    "translationEn": "אנגלית",
+    "translationPlaceholderHe": "לדוגמה: כן",
+    "translationPlaceholderEn": "לדוגמה: Yes",
+    "addOption": "הוסף אופציה",
+    "removeOption": "הסר אופציה",
+    "contactTypeLabel": "בחר סוג איש קשר",
+    "type": {
+      "text": "טקסט",
+      "number": "מספר",
+      "date": "תאריך",
+      "datetime": "תאריך ושעה",
+      "select": "בחירה",
+      "time": "שעה",
+      "textarea": "טקסט ארוך",
+      "signature": "חתימה",
+      "image": "תמונות",
+      "file": "מסמכים",
+      "video": "סרטונים",
+      "quickUpdate": "לחצן עדכון מהיר",
+      "gpsLocation": "מיקום GPS",
+      "contact": "איש קשר",
+      "documentRequirements": "מסמכים נדרשים"
+    },
+    "documentRequirements": {
+      "title": "סוגי מסמכים נדרשים"
+    }
+  },
+  "report": {
+    "title": "דיווח יומי",
+    "date": "תאריך הדיווח",
+    "project": "פרויקט",
+    "selectProject": "בחר פרויקט...",
+    "step": "שלב {{current}} מתוך {{total}}",
+    "prev": "קודם",
+    "next": "הבא",
+    "submit": "שלח",
+    "success": "הדיווח נשלח בהצלחה!",
+    "loading": "שולח...",
+    "comment_placeholder": "תיאור/הערה לשדה (לא חובה)"
+  },
+  "reportList": {
+    "title": "רשימת דוחות",
+    "create": "דיווח חדש"
+  },
+  "reportView": {
+    "backToList": "חזרה לרשימה",
+    "reportedBy": "מדווח",
+    "project": "פרויקט",
+    "template": "תבנית",
+    "reportDate": "תאריך דיווח",
+    "loading": "טוען...",
+    "signatureAlt": "חתימה",
+    "imageAlt": "תמונה",
+    "approvers": "גורמים מאשרים",
+    "approvalDate": "תאריך אישור",
+    "approveNow": "תורך לאשר!"
+  },
+  "approvalDialog": {
+    "selectStatus": "בחר סטטוס",
+    "note": "הערה",
+    "submit": "אישור",
+    "success": "הסטטוס נשמר בהצלחה",
+    "error": "אירעה שגיאה בעת שמירת הסטטוס",
+    "cancel": "ביטול",
+    "approveNow": "אשר עכשיו",
+    "signature": "חתימה",
+    "approvalDate": "תאריך אישור",
+    "tab_approve": "אישור",
+    "tab_discussion": "תהליכים",
+    "subject": "נושא",
+    "message": "הודעה",
+    "openDiscussion": "יצירה",
+    "newDiscussion": "תהליך חדש",
+    "discussionOpened": "התהליך נפתח בהצלחה",
+    "discussionTarget": "שלח אל",
+    "fillAllFields": "נא למלא את כל השדות",
+    "processType": "סוג תהליך"
+  },
+  "messageDialog": {
+    "title": "הודעה",
+    "confirm": "אישור",
+    "cancel": "ביטול",
+    "close": "סגור"
+  },
+  "userCreate": {
+    "title": "הוספת משתמש חדש",
+    "username": "שם משתמש",
+    "password": "סיסמה",
+    "fullName": "שם מלא",
+    "email": "דוא''ל",
+    "phone": "טלפון",
+    "role": "תפקיד",
+    "permissionGroup": "קבוצת הרשאה",
+    "save": "שמור משתמש",
+    "saving": "שומר...",
+    "sendConnectionDetails": "שלח פרטי התחברות למשתמש",
+    "errors": {
+      "username": "חובה להזין שם משתמש",
+      "password": "חובה להזין סיסמה",
+      "fullName": "חובה להזין שם מלא",
+      "roleId": "חובה לבחור תפקיד"
+    }
+  },
+  "userList": {
+    "title": "רשימת משתמשים",
+    "loading": "טוען משתמשים...",
+    "error": "אירעה שגיאה בעת טעינת המשתמשים",
+    "empty": "לא נמצאו משתמשים",
+    "username": "שם משתמש",
+    "role": "הרשאה",
+    "edit": "ערוך משתמש",
+    "create": "משתמש חדש",
+    "noPermissionGroup": "אין קבוצה"
+  },
+  "userEdit": {
+    "title": "עריכת משתמש"
+  },
+  "userView": {
+    "title": "פרטי משתמש"
+  },
+  "userDelete": {
+    "confirmTitle": "מחיקת משתמש",
+    "confirmMessage": "האם אתה בטוח שברצונך למחוק את המשתמש? פעולה זו אינה הפיכה.",
+    "success": "המשתמש נמחק בהצלחה",
+    "error": "אירעה שגיאה בעת מחיקת המשתמש"
+  },
+  "task": {
+    "delete": "מחק משימה",
+    "details": "פרטי משימה",
+    "confirmDelete": "האם אתה בטוח שברצונך למחוק את המשימה?",
+    "deleted": "המשימה נמחקה בהצלחה",
+    "type": "סוג משימה",
+    "createTitle": "יצירת משימה חדשה",
+    "editTitle": "עריכת משימה",
+    "title": "כותרת",
+    "description": "תיאור",
+    "status": "סטטוס",
+    "priority": "עדיפות",
+    "assignedUser": "אחראי",
+    "project": "פרויקט",
+    "files": "קבצים",
+    "tags": "תגיות",
+    "tagsPlaceholder": "הקלד שם תגית",
+    "create": "משימה חדשה",
+    "update": "עדכן משימה",
+    "errors": {
+      "required": "שדה חובה",
+      "priorityRange": "העדיפות חייבת להיות בין 1 ל־5"
+    },
+    "listTitle": "משימות",
+    "loading": "טוען משימות...",
+    "loadError": "נכשל בטעינת המשימות.",
+    "empty": "לא נמצאו משימות.",
+    "statusUnknown": "לא ידוע",
+    "noDescription": "אין תיאור",
+    "filter": {
+      "status": "סטטוס",
+      "project": "פרויקט",
+      "assignedUser": "אחראי",
+      "waitingForMe": "ממתין לטיפולי",
+      "resultsCount": "תוצאות",
+      "tag": "סנן לפי תגית",
+      "showFilters": "הצג סינונים",
+      "dateRange": "טווח תאריכים",
+      "startDate": "תאריך התחלה",
+      "endDate": "תאריך סיום",
+      "hideFilters": "הסתר סינונים",
+      "editFilters": "ערוך סינונים",
+      "taskTitle": "כותרת משימה",
+      "sortBy": "מיון לפי",
+      "sortOptions": {
+        "priority": "דחיפות",
+        "lastUpdatedDate": "תאריך עדכון אחרון",
+        "ai": "AI אוטומטי עם"
+      }
+    },
+    "taskDelete": {
+      "success": "המשימה נמחקה בהצלחה.",
+      "error": "אירעה שגיאה בעת מחיקת המשימה.",
+      "notFound": "המשימה לא נמצאה.",
+      "referenced": "לא ניתן למחוק את המשימה כי היא מקושרת לרכיבים אחרים."
+    },
+    "createdAt": "נוצר בתאריך",
+    "updatedAt": "עודכן בתאריך",
+    "completedAt": "הושלם בתאריך"
+  },
+  "taskStatus": {
+    "create": "סטטוס חדש",
+    "title": "סטטוסי משימות",
+    "default": "ברירת מחדל",
+    "final": "סופי",
+    "save": "שמירה",
+    "delete": "מחיקה",
+    "add": "סטטוס חדש",
+    "color": "צבע",
+    "namePlaceholder": "שם הסטטוס",
+    "iconPlaceholder": "בחר אייקון",
+    "nameLabel": "שם הסטטוס *",
+    "iconLabel": "אייקון",
+    "loading": "טוען סטטוסים...",
+    "empty": "אין סטטוסים כרגע",
+    "successSave": "הסטטוס נשמר בהצלחה",
+    "successDelete": "הסטטוס נמחק בהצלחה",
+    "errors": {
+      "errorTitle": "שגיאה",
+      "errorDeleteInUseMessage": "לא ניתן למחוק סטטוס בשימוש",
+      "errorSaveMessage": "לא ניתן לשמור את הסטטוס",
+      "errorDeleteMessage": "לא ניתן למחוק את הסטטוס",
+      "errorLoading": "שגיאה בטעינה",
+      "saveFailed": "נכשל לשמור את הסטטוס"
+    },
+    "cancelCreateTitle": "ביטול סטטוס חדש",
+    "cancelCreateMessage": "?הסטטוס החדש לא נשמר. האם לבטל אותו",
+    "unsavedTitle": "שינויים לא נשמרו",
+    "unsavedMessage": "?יש לך שינויים שלא נשמרו. האם אתה בטוח שברצונך לבטל",
+    "absantFieldsTitle": "שדות חסרים",
+    "absantFieldsMessage": "יש שדות חובה שלא מולאו. נא למלא את כל שדות החובה."
+  },
+  "selectCompany": {
+    "title": "בחר מערכת",
+    "choose": "בחר את החברה שאליה תרצה להתחבר",
+    "submit": "המשך"
+  },
+  "auth": {
+    "invalid_credentials": "שם משתמש או סיסמה שגויים",
+    "general_error": "אירעה שגיאה, נסה שוב מאוחר יותר",
+    "unknown_error": "שגיאה לא מזוהה"
+  },
+  "templateType": {
+    "templateTypeTitle": "סוג תבנית",
+    "task": "✅משימה",
+    "worklog": "📝יומן עבודה",
+    "asset": "📦נכס"
+  },
+  "taskTypeForm": {
+    "title": "הגדרת סוג משימה",
+    "name": "שם סוג המשימה",
+    "template": "תבנית משויכת",
+    "createSuccess": "סוג המשימה נוצר בהצלחה!",
+    "updateSuccess": "סוג המשימה עודכן בהצלחה!",
+    "confirmDelete": "האם אתה בטוח שברצונך למחוק את סוג המשימה?",
+    "deleteSuccess": "סוג המשימה נמחק בהצלחה",
+    "deleteError": "שגיאה בעת מחיקה"
+  },
+  "taskTypeList": {
+    "title": "סוגי משימות",
+    "template": "תבנית משויכת",
+    "empty": "לא נמצאו סוגי משימות"
+  },
+  "common": {
+    "save": "שמירה",
+    "add": "הוספה",
+    "update": "עדכון",
+    "updated":"עודכן",
+    "create": "יצירה",
+    "edit": "עריכה",
+    "delete": "מחיקה",
+    "back": "חזרה",
+    "close": "סגירה",
+    "all": "הכל",
+    "none": "ללא",
+    "unassigned": "ללא אחראי",
+    "without": "ללא",
+    "view": "צפייה",
+    "approve": "אישור",
+    "assign": "שיבוץ",
+    "submit": "שליחה",
+    "clearFilters": "נקה סינון",
+    "saved_successfully": "נשמר בהצלחה",
+    "updated_successfully": "עודכן בהצלחה",
+    "deleted_successfully": "נמחק בהצלחה",
+    "saved_error": "שגיאה בשמירה",
+    "updated_error": "שגיאה בעדכון",
+    "deleted_error": "שגיאה במחיקה",
+    "loading": "טוען...",
+    "select": "בחר",
+    "copyLink": "העתק קישור ללוח",
+    "linkCopied": "הקישור הועתק ללוח",
+    "selectAll": "בחר הכל",
+    "select_placeholder": "בחר",
+    "open_in_new_tab": "פתיחה בחלון חדש",
+    "active": "פעיל",
+    "inactive": "לא פעיל",
+    "yes": "כן",
+    "no": "לא",
+    "retry": "נסה שוב",
+    "inUse": "לא ניתן למחוק ערך זה מאחר שהוא בשימוש"
+  },
+  "permission": {
+    "selectEntities": "הפעלת מודולים",
+    "actions": "פעולות",
+    "manageTitle": "ניהול קבוצות הרשאה",
+    "create": "הוספת קבוצה",
+    "loadingGroups": "טוען קבוצות...",
+    "noGroupsFound": "לא נמצאו קבוצות הרשאה.",
+    "errorLoadingGroups": "שגיאה בטעינת קבוצות הרשאה",
+    "noDescription": "ללא תיאור"
+  },
+  "taskType": {
+    "create": "הוספת סוג משימה"
+  },
+  "roles": {
+    "manageTitle": "ניהול הרשאות",
+    "create": "הרשאה חדשה"
+  },
+  "priority": {
+    "low": "נמוכה",
+    "medium": "בינונית",
+    "high": "גבוהה",
+    "critical": "קריטית"
+  },
+  "access": {
+    "validating": "מאמת קישור, נא להמתין..."
+  },
+  "unauthorized": {
+    "title": "אין לך הרשאה לגשת לעמוד זה",
+    "subtitle": "ייתכן שהקישור לא תקף, או שאינך מורשה לגשת אליו.",
+    "backToHome": "חזרה לדף הבית"
+  },
+  "notFound": {
+    "title": "העמוד לא נמצא",
+    "subtitle": "ייתכן שהכתובת שגויה או שהמשאב נמחק.",
+    "backToHome": "חזרה לדף הבית"
+  },
+  "hierarchy": {
+    "listTitle": "רמות היררכיה",
+    "create": "הוספת רמה חדשה",
+    "empty": "אין רמות היררכיה במערכת.",
+    "loading": "טוען...",
+    "level": "רמה",
+    "notUpperLevel": "ללא ערך-על",
+    "active": "פעיל",
+    "inactive": "לא פעיל",
+    "editTitle": "עריכת רמת היררכיה",
+    "createTitle": "הוספת רמת היררכיה",
+    "displayName": "שם רמה",
+    "levelIndex": "מיקום בהיררכיה",
+    "isActive": "פעיל",
+    "details": "פרטי היררכיה",
+    "newValue": "הוספת ערך חדש",
+    "noParent": "ללא רמה עליונה",
+    "hierarchySettings": "שיוך ארגוני",
+    "values": {
+      "title": "ערכים"
+    },
+    "entities": {
+      "title": "שימוש ביישויות"
+    },
+    "error": {
+      "create": "שגיאה ביצירת רמה חדשה",
+      "update": "שגיאה בעדכון רמה",
+      "delete": "שגיאה במחיקת רמה",
+      "fetch": "שגיאה בטעינת רמות היררכיה"
+    }
+  },
+  "companySettings": {
+    "title": "הגדרות כלליות לחברה",
+    "companyName": "שם החברה",
+    "companyPhone": "טלפון",
+    "companyEmail": "אימייל",
+    "companyIdentifier": "ח\"פ / מספר מזהה חברה",
+    "companyAddress": "כתובת",
+    "smsProvider": "ספק SMS",
+    "smsSenderName": "שם שולח",
+    "smsSenderPhone": "טלפון שולח",
+    "smsUserName": "שם משתמש SMS",
+    "smsPassword": "סיסמה ל-SMS",
+    "changePasswordLabel": "שינוי סיסמת SMS",
+    "loading": "טוען את הגדרות החברה...",
+    "noSettingsFound": "אין עדיין הגדרות – צור כעת.",
+    "successMessage": "הגדרות נשמרו בהצלחה",
+    "error": "נכשלה טעינת ההגדרות.",
+    "createButton": "צור הגדרות",
+    "general": "כללי",
+    "sms": "SMS",
+    "companyNameRequired": "יש למלא את שם החברה"
+  },
+  "validation": {
+    "required": "שדה חובה",
+    "email": "כתובת אימייל לא תקינה",
+    "atLeastOne": "יש לבחור לפחות סוג מסמך אחד"
+  },
+  "pwa": {
+    "newVersionTitle": "עדכון זמין!",
+    "newVersionText": "קיימת גרסה חדשה של המערכת. האם ברצונך לעדכן כעת?",
+    "reloadNow": "כן, עדכן עכשיו",
+    "cancel": "אחר כך"
+  },
+  "systemPagesHub": {
+    "title": "ניהול טבלאות מערכת"
+  },
+  "comingSoon": {
+    "title": "מודול זה נמצא בפיתוח",
+    "description": "אנחנו עובדים על הפיצ'ר הזה כדי לספק לך את החוויה הטובה ביותר. הישאר מעודכן!"
+  },
+  "requiredDocTypeForm": {
+    "createTitle": "הוספת סוג מסמך נדרש",
+    "editTitle": "עריכת סוג מסמך נדרש",
+    "viewTitle": "צפייה בסוג מסמך נדרש",
+    "key": "מפתח ייחודי",
+    "displayName": "שם תצוגה",
+    "description": "תיאור",
+    "defaultIsRequired": "חובה כברירת מחדל",
+    "minFiles": "מספר קבצים מינימלי",
+    "maxFiles": "מספר קבצים מקסימלי",
+    "allowedMime": "סוגי קבצים מותרים",
+    "isActive": "פעיל",
+    "createSuccess": "סוג המסמך נוסף בהצלחה",
+    "updateSuccess": "סוג המסמך עודכן בהצלחה",
+    "deleteSuccess": "סוג המסמך נמחק בהצלחה",
+    "error": "אירעה שגיאה בעת שמירת סוג המסמך",
+    "loadError": "שגיאה בטעינת סוג המסמך",
+    "deleteError": "שגיאה במחיקת סוג המסמך",
+    "confirmDelete": "האם אתה בטוח שברצונך למחוק את סוג המסמך?",
+    "requiredMinError": "אם שדה חובה – חייב להיות מינימום קובץ אחד",
+    "minMaxError": "מספר מקסימלי חייב להיות גדול או שווה למינימלי"
+  },
+  "requiredDocTypeList": {
+    "title": "סוגי מסמכים נדרשים",
+    "create": "הוספת סוג מסמך",
+    "empty": "לא קיימים סוגי מסמכים להצגה",
+    "required": "חובה",
+    "mime": "סוגי קבצים מותרים"
+  }
+}
