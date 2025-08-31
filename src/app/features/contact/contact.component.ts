@@ -15,7 +15,6 @@ export class ContactComponent {
   private http = inject(HttpClient);
   private router = inject(Router);
 
-  // מודל פשוט עבור הטופס
   formData = {
     name: '',
     email: '',
@@ -29,12 +28,10 @@ export class ContactComponent {
     this.isSubmitting = true;
     this.error = null;
 
-    // כאן שולחים ל־API שלך
     this.http.post(`${environment.apiBaseUrl}/contact`, this.formData)
       .subscribe({
         next: () => {
           this.isSubmitting = false;
-          // הפניה לעמוד תודה
           this.router.navigate(['/thankyou'], { queryParams: { type: 'lead' } });
         },
         error: (err) => {
