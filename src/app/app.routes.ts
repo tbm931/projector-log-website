@@ -7,12 +7,11 @@ import { ContactComponent } from './features/contact/contact.component';
 import { ThankYouComponent } from './features/thank-you/thank-you.component';
 
 export const routes: Routes = [
-  { path: '', redirectTo: 'home' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' }, 
   { path: 'home', component: HomeComponent },
   { path: 'about', component: AboutComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'pricing', component: PricingComponent },
   { path: 'contact', component: ContactComponent },
-  { path: 'thank-you', component: ThankYouComponent },
-  { path: '**', redirectTo: 'home' }
+  { path: '**', redirectTo: 'home' },
 ]
