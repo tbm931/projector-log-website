@@ -1,1 +1,29 @@
-<p>thank-you works!</p>
+<section class="text-center py-16 max-w-2xl mx-auto">
+    <h1 class="text-3xl font-bold mb-6">תודה!</h1>
+
+    <!-- הודעות שונות לפי פרמטרים -->
+    <p *ngIf="type === 'lead'" class="mb-4">
+        הפרטים נשלחו אלינו. פתחנו עבורך משימה לטיפול בצוות המכירות.
+    </p>
+
+    <p *ngIf="plan === 'free'" class="mb-4">
+        החברה החינמית שלך נוצרה בהצלחה. שלחנו לך מייל עם פרטי גישה.
+    </p>
+
+    <p *ngIf="plan === 'pro100'" class="mb-4">
+        תודה על ההצטרפות! חבילת <strong>$100</strong> הופעלה עבורך. תמצא את פרטי הגישה במייל.
+    </p>
+
+    <p *ngIf="plan === 'biz250'" class="mb-4">
+        תודה על ההצטרפות! חבילת <strong>$250</strong> הופעלה עבורך. תמצא את פרטי הגישה במייל.
+    </p>
+
+    <p *ngIf="!type && !plan" class="mb-4">
+        הפרטים שלך התקבלו. נחזור אליך בהקדם.
+    </p>
+
+    <!-- כפתור חזרה -->
+    <a routerLink="/" class="inline-block mt-6 px-6 py-2 rounded bg-blue-600 text-white">
+        חזרה לדף הבית
+    </a>
+</section>

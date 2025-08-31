@@ -1,1 +1,28 @@
-<p>contact works!</p>
+<section class="max-w-lg mx-auto py-12">
+    <h1 class="text-2xl font-bold mb-6 text-center">צור קשר</h1>
+
+    <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="space-y-4">
+        <div>
+            <label class="block mb-1">שם מלא</label>
+            <input type="text" [(ngModel)]="formData.name" name="name" required class="w-full border rounded p-2" />
+        </div>
+
+        <div>
+            <label class="block mb-1">אימייל</label>
+            <input type="email" [(ngModel)]="formData.email" name="email" required class="w-full border rounded p-2" />
+        </div>
+
+        <div>
+            <label class="block mb-1">הודעה</label>
+            <textarea [(ngModel)]="formData.message" name="message" required rows="4"
+                class="w-full border rounded p-2"></textarea>
+        </div>
+
+        <button type="submit" [disabled]="isSubmitting || !contactForm.form.valid"
+            class="w-full bg-blue-600 text-white py-2 rounded">
+            {{ isSubmitting ? 'שולח...' : 'שלח' }}
+        </button>
+
+        <p *ngIf="error" class="text-red-600 mt-2">{{ error }}</p>
+    </form>
+</section>

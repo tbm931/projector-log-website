@@ -1,7 +1,17 @@
-<!-- app.component.html -->
-<div class="flex flex-col bg-gray-50">
+<header class="container mx-auto p-4 flex items-center justify-between">
+  <a routerLink="/" class="font-bold text-xl">WorkLogix</a>
+  <nav class="flex gap-4">
+    <a routerLink="/about" routerLinkActive="font-semibold">אודות</a>
+    <a routerLink="/features" routerLinkActive="font-semibold">יכולות</a>
+    <a routerLink="/pricing" routerLinkActive="font-semibold">חבילות</a>
+    <a routerLink="/contact" routerLinkActive="font-semibold">צור קשר</a>
+  </nav>
+</header>
 
-  <app-navbar class="shrink-0"></app-navbar>
-
+<main class="container mx-auto p-4">
   <router-outlet></router-outlet>
-</div>
+</main>
+
+<footer class="container mx-auto p-4 text-sm text-gray-500 border-t mt-12">
+  © {{ currentYear }} WorkLogix
+</footer>
