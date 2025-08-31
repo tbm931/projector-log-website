@@ -1,17 +1,21 @@
-<header class="container mx-auto p-4 flex items-center justify-between">
-  <a routerLink="/" class="font-bold text-xl">WorkLogix</a>
-  <nav class="flex gap-4">
-    <a routerLink="/about" routerLinkActive="font-semibold">אודות</a>
-    <a routerLink="/features" routerLinkActive="font-semibold">יכולות</a>
-    <a routerLink="/pricing" routerLinkActive="font-semibold">חבילות</a>
-    <a routerLink="/contact" routerLinkActive="font-semibold">צור קשר</a>
-  </nav>
+<header class="bg-white shadow-sm sticky top-0 z-50">
+  <div class="container mx-auto p-4 flex items-center justify-between">
+    <a routerLink="/" class="font-bold text-2xl text-blue-700">WorkLogix</a>
+    <nav class="flex gap-6 text-gray-700 font-medium">
+      <a routerLink="/about" routerLinkActive="text-blue-600 font-semibold">אודות</a>
+      <a routerLink="/features" routerLinkActive="text-blue-600 font-semibold">יכולות</a>
+      <a routerLink="/pricing" routerLinkActive="text-blue-600 font-semibold">חבילות</a>
+      <a routerLink="/contact" routerLinkActive="text-blue-600 font-semibold">צור קשר</a>
+    </nav>
+  </div>
 </header>
 
-<main class="container mx-auto p-4">
+<main class="container mx-auto p-6">
   <router-outlet></router-outlet>
 </main>
 
-<footer class="container mx-auto p-4 text-sm text-gray-500 border-t mt-12">
-  © {{ currentYear }} WorkLogix
+<footer class="bg-gray-100 border-t mt-16">
+  <div class="container mx-auto p-6 text-sm text-gray-500 text-center">
+    © {{ currentYear }} WorkLogix — כל הזכויות שמורות
+  </div>
 </footer>

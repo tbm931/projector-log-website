@@ -4,7 +4,8 @@ import { TranslocoService, TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, TranslocoModule],
+  standalone: true,
+  imports: [RouterOutlet, TranslocoModule, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
