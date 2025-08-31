@@ -11,6 +11,13 @@ export class HomeComponent {
   constructor(private detailService: DetailService) {}
   onClick() {
     alert('Button clicked!');
-    this.detailService.getAll().forEach(detail => alert(detail));
+    this.detailService.getAll().subscribe(
+      {
+        next: (details) => {
+          details.map(detail => `ID: ${detail.id}, Name: ${detail.name}, Description: ${detail.description}, Price: ${detail.price}`).forEach(detailString => alert(detailString));
+        },
+        error: (err) => console.error('Error fetching details:', err)
+      }
+    )
   }
 }

@@ -7,7 +7,7 @@ import { DetailsDTO } from '../models/details.model';
   providedIn: 'root'
 })
 export class DetailService {
-  private apiUrl = 'https://localhost:44396/api/detail';
+  private apiUrl = 'https://localhost:7235/api/Detail';
 
   constructor(private http: HttpClient) {}
 
