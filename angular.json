@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "work-logix-new-client": {
+    "projector-log-website": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/work-logix-new-client",
+            "outputPath": "dist/projector-log-website",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "allowedCommonJsDependencies": [
@@ -81,10 +81,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "work-logix-new-client:build:production"
+              "buildTarget": "projector-log-website:build:production"
             },
             "development": {
-              "buildTarget": "work-logix-new-client:build:development"
+              "buildTarget": "projector-log-website:build:development"
             }
           },
           "defaultConfiguration": "development"
