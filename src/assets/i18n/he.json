@@ -3,7 +3,12 @@
     "about": "אודות",
     "features": "יכולות",
     "packages": "חבילות",
-    "contact": "צור קשר"
+    "contact": "צור קשר",
+    "selectLanguage": "בחר שפה",
+    "language": {
+      "he": "עברית",
+      "en": "אנגלית"
+    }
   },
   "home":{
     "title": "ניהול פרויקטים ומשימות — פשוט ויעיל",

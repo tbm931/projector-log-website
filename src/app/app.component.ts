@@ -1,11 +1,12 @@
 import { Component, inject, OnInit } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { TranslocoService, TranslocoModule } from '@ngneat/transloco';
+import { LanguageSwitcherComponent } from './shared/components/language-switcher/language-switcher.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TranslocoModule, RouterLink, RouterLinkActive],
+  imports: [RouterOutlet, TranslocoModule, RouterLink, RouterLinkActive,LanguageSwitcherComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

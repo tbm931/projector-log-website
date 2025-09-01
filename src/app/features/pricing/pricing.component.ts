@@ -31,7 +31,7 @@ export class PricingComponent {
     this.freeFeatures = this.transloco.selectTranslateObject<string[]>('pricing.free.features');
     this.pro100Features = this.transloco.selectTranslateObject<string[]>('pricing.pro_100.features');
     this.pro250Features = this.transloco.selectTranslateObject<string[]>('pricing.pro_250.features');
-    this.enterpriseFeatures = this.transloco.selectTranslateObject<string[]>('pricing.pro_200.features');
+    this.enterpriseFeatures = this.transloco.selectTranslateObject<string[]>('pricing.enterprise.features');
   }
 
   /** התחלת חבילת חינם */

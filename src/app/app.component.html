@@ -1,6 +1,10 @@
 <header class="bg-white shadow-sm sticky top-0 z-50">
   <div class="container mx-auto p-4 flex items-center justify-between">
-    <a routerLink="/" class="font-bold text-2xl text-blue-700">Projector</a>
+    <div class="p-4 flex items-center justify-between">
+      <!-- 🔄 החלפת שפה -->
+      <app-language-switcher></app-language-switcher>
+      <a routerLink="/" class="font-bold text-2xl text-blue-700 mr-4">Projector</a>
+    </div>
     <nav class="flex gap-6 text-gray-700 font-medium">
       <a routerLink="/about" routerLinkActive="text-blue-600 font-semibold">{{'menu.about' | transloco}}</a>
       <a routerLink="/features" routerLinkActive="text-blue-600 font-semibold">{{'menu.features' | transloco}}</a>
