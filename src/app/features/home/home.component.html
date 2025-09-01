@@ -1,14 +1,12 @@
 <section class="text-center py-20 bg-gradient-to-b from-blue-50 to-white">
-    <h1 class="text-4xl mb-6 text-gray-800">ניהול פרויקטים ומשימות — פשוט ויעיל</h1>
-    <p class="mb-10 text-lg text-gray-600">מערכת מולטי־טננט, קלה לשימוש, עם אוטומציות חכמות.</p>
+    <h1 class="text-4xl mb-6 text-gray-800">{{'home.title' | transloco}}</h1>
+    <p class="mb-10 text-lg text-gray-600">{{'home.subtitle' | transloco}}</p>
     <div class="flex gap-6 justify-center">
         <a routerLink="/pricing"
             class="px-6 py-3 rounded-lg bg-blue-600 hover:bg-blue-700 text-white font-semibold shadow-md transition">
-            בחרו חבילה
-        </a>
+            {{'home.choosePlan' | transloco}} </a>
         <a routerLink="/features"
             class="px-6 py-3 rounded-lg border border-gray-300 hover:bg-gray-50 font-semibold transition">
-            גלה יכולות
-        </a>
+            {{'home.seeFeatures' | transloco}} </a>
     </div>
 </section>

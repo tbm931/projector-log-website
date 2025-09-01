@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { DetailService } from '../../core/services/details.service';
 import { RouterLink } from '@angular/router';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-home',
-  imports: [RouterLink],
+  imports: [RouterLink, TranslocoModule],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
 export class HomeComponent {
-  constructor(private detailService: DetailService) {}
+  constructor(private detailService: DetailService) { }
   onClick() {
     alert('Button clicked!');
     this.detailService.getAll().subscribe(

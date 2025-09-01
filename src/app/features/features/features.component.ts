@@ -1,8 +1,10 @@
 import { Component } from '@angular/core';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   selector: 'app-features',
-  imports: [],
+  standalone: true,
+  imports: [TranslocoModule],
   templateUrl: './features.component.html',
   styleUrl: './features.component.scss'
 })

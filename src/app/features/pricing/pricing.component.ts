@@ -1,15 +1,17 @@
 import { Component, inject } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { CommonModule, NgFor } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
 import { environment } from '../../../environments/environment';
 import { ProvisionService } from '../../core/services/provision.service';
+import { TranslocoModule, TranslocoService } from '@ngneat/transloco';
+import { Observable } from 'rxjs';
 
 @Component({
   standalone: true,
   selector: 'app-pricing',
   templateUrl: './pricing.component.html',
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslocoModule, NgFor],
 })
 export class PricingComponent {
   private provision = inject(ProvisionService);
@@ -19,6 +21,18 @@ export class PricingComponent {
   showFreeForm = false;
   loadingFree = false;
   freeError = '';
+
+  freeFeatures: Observable<string[]>;
+  pro100Features: Observable<string[]>;
+  pro250Features: Observable<string[]>;
+  enterpriseFeatures: Observable<string[]>;
+
+  constructor(private transloco: TranslocoService) {
+    this.freeFeatures = this.transloco.selectTranslateObject<string[]>('pricing.free.features');
+    this.pro100Features = this.transloco.selectTranslateObject<string[]>('pricing.pro_100.features');
+    this.pro250Features = this.transloco.selectTranslateObject<string[]>('pricing.pro_250.features');
+    this.enterpriseFeatures = this.transloco.selectTranslateObject<string[]>('pricing.pro_200.features');
+  }
 
   /** התחלת חבילת חינם */
   onStartFree(formValue: { name: string; email: string; company: string }) {
