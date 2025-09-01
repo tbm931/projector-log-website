@@ -1,12 +1,13 @@
 import { Component, inject } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @Component({
   standalone: true,
   selector: 'app-thank-you',
   templateUrl: './thank-you.component.html',
-  imports: [CommonModule],
+  imports: [CommonModule, TranslocoModule, RouterLink],
 })
 export class ThankYouComponent {
   private route = inject(ActivatedRoute);

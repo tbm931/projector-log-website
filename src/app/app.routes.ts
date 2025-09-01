@@ -9,6 +9,7 @@ import { ThankYouComponent } from './features/thank-you/thank-you.component';
 export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' }, 
   { path: 'home', component: HomeComponent },
+  { path: 'thank-you', component: ThankYouComponent },
   { path: 'about', component: AboutComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'pricing', component: PricingComponent },

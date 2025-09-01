@@ -1,28 +1,28 @@
 <section class="max-w-lg mx-auto py-16">
-    <h1 class="text-3xl font-bold mb-8 text-center text-blue-700">צור קשר</h1>
+    <h1 class="text-3xl font-bold mb-8 text-center text-blue-700">{{'menu.contact' | transloco}}</h1>
 
     <form (ngSubmit)="submitForm()" #contactForm="ngForm" class="space-y-6 bg-white shadow-lg p-8 rounded-lg">
         <div>
-            <label class="block mb-1 font-semibold">שם מלא</label>
+            <label class="block mb-1 font-semibold">{{'contact.name' | transloco}}</label>
             <input type="text" [(ngModel)]="formData.name" name="name" required
                 class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" />
         </div>
 
         <div>
-            <label class="block mb-1 font-semibold">אימייל</label>
+            <label class="block mb-1 font-semibold">{{'contact.email' | transloco}}</label>
             <input type="email" [(ngModel)]="formData.email" name="email" required
                 class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-400" />
         </div>
 
         <div>
-            <label class="block mb-1 font-semibold">הודעה</label>
+            <label class="block mb-1 font-semibold">{{'contact.message' | transloco}}</label>
             <textarea [(ngModel)]="formData.message" name="message" required rows="4"
                 class="w-full border rounded p-3 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
         </div>
 
         <button type="submit" [disabled]="isSubmitting || !contactForm.form.valid"
             class="w-full bg-blue-600 hover:bg-blue-700 transition text-white py-3 rounded font-semibold">
-            {{ isSubmitting ? 'שולח...' : 'שלח' }}
+            {{ isSubmitting ? ('contact.sending' | transloco) : ('contact.send' | transloco) }}
         </button>
 
         <p *ngIf="error" class="text-red-600 mt-2">{{ error }}</p>
